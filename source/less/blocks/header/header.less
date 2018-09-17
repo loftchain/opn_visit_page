@@ -1,122 +1,14 @@
-.header {
-  height: 80px;
-}
-
 .header__wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  max-width: 900px;
+  max-width: 1170px;
   margin: 0 auto;
-  padding: 5px 20px;
-}
-
-
-
-.header__logo-wrap {
-  flex-shrink: 0;
-  position: relative;
-  box-sizing: border-box;
-  margin-right: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 70px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-}
-
-.header__logo-wrap::before {
-  box-sizing: border-box;
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  display: block;
-  width: 62px;
-  height: 62px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-}
-
-.header__logo-wrap::after {
-  box-sizing: border-box;
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  display: block;
-  width: 54px;
-  height: 54px;
-  border: 1px solid rgba(255, 255, 255, 1);
-  border-radius: 50%;
-}
-
-.header__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
-  background: #ffffff;
-  border-radius: 50%;
+  padding: 0 15px;
+  padding-top: 45px;
 }
 
 .header__title {
   margin: 0;
-  font-size: 30px;
-  line-height: 55px;
+  font-size: 36px;
+  line-height: 59px;
+  text-align: center;
   text-transform: uppercase;
-  font-weight: 600;
-}
-
-//@media (max-width: 1600px) {
-//  .header__wrapper::before {
-//    left: -10.2%;
-//  }
-//
-//  .header__wrapper::after {
-//    left: -11.1%;
-//  }
-//}
-//
-//@media (max-width: 1367px) {
-//  .header__wrapper::before {
-//    left: -4.2%;
-//  }
-//
-//  .header__wrapper::after {
-//    left: -5.1%;
-//  }
-//}
-//
-//@media (max-width: 1199px) {
-//  .header__wrapper::before,
-//  .header__wrapper::after {
-//    display: none;
-//  }
-//}
-@media (max-height: 800px) {
-  .header {
-    height: auto;
-  }
-
-  .header__wrapper {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 767px) {
-  .header__title {
-    font-size: 28px;
-    line-height: 50px;
-  }
-}
-
-@media (max-width: 575px) {
-  .header__title {
-    font-size: 25px;
-    line-height: 35px;
-  }
 }
