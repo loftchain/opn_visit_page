@@ -88,7 +88,8 @@ gulp.task('serve', function () {
 gulp.task('copy', function () {
   return gulp.src([
     'source/images/**',
-    'source/js/**'
+    'source/js/**',
+    'source/css/**'
   ], {
     base: 'source'
   })
