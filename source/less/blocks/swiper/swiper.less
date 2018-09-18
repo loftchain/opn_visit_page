@@ -1,0 +1,35 @@
+.swiper-container {
+  padding-bottom: 70px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 390px;
+  height: auto;
+}
+
+.swiper-pagination-bullet {
+  margin: 0 10px !important;
+  width: 18px;
+  height: 18px;
+  background: #c4c4c4;
+  opacity: 1;
+  outline: none;
+}
+
+.swiper-pagination-bullet-active {
+  position: relative;
+  background: linear-gradient(180deg, #FE6D1D 0%, #FFBB28 100%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fe6d1d;
+    border-radius: 50%;
+  }
+}
