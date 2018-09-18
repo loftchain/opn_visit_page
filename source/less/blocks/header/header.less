@@ -4,7 +4,6 @@
 
 .header__wrapper {
   box-sizing: border-box;
-  height: 126px;
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
@@ -27,14 +26,12 @@
 
 @media (max-height: 999px) {
   .header__wrapper {
-    height: 106px;
     padding-top: 25px;
   }
 }
 
 @media (max-height: 899px) {
   .header__wrapper {
-    height: 96px;
     padding-top: 15px;
   }
 
@@ -43,19 +40,15 @@
   }
 }
 
-@media (max-width: 1365px) {
-  .header__wrapper {
-    height: 96px;
-    padding-top: 15px;
-  }
-
+@media (max-width: 767px) {
   .header__title {
-    line-height: 45px;
+    font-size: 28px;
+    line-height: 30px;
+    text-transform: capitalize;
   }
-}
 
-@media (max-width: 1365px) {
-  .header__wrapper {
-    height: auto;
+  .header__text {
+    font-size: 14px;
+    line-height: 18px;
   }
 }

@@ -11,6 +11,22 @@
   padding: 110px 15px 0;
 }
 
+@media (max-width: 767px) {
+  .main {
+    height: auto;
+  }
+}
+
+@media (max-height: 3000px) {
+  .main {
+    height: calc(100vh - 246px);
+  }
+
+  .main__wrapper {
+    padding-top: 110px;
+  }
+}
+
 @media (max-height: 999px) {
   .main {
     height: calc(100vh - 226px);
@@ -32,12 +48,6 @@
 }
 
 @media (max-height: 767px) {
-  .main {
-    height: auto;
-  }
-}
-
-@media (max-width: 1199px) {
   .main {
     height: auto;
   }

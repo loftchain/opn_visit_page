@@ -202,13 +202,13 @@ canvas {
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(61.96deg, #161930 2.74%, #242B46 96.32%);
+  margin-bottom: auto;
 }
 .header {
   position: relative;
 }
 .header__wrapper {
   box-sizing: border-box;
-  height: 126px;
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
@@ -228,31 +228,26 @@ canvas {
 }
 @media (max-height: 999px) {
   .header__wrapper {
-    height: 106px;
     padding-top: 25px;
   }
 }
 @media (max-height: 899px) {
   .header__wrapper {
-    height: 96px;
     padding-top: 15px;
   }
   .header__title {
     line-height: 45px;
   }
 }
-@media (max-width: 1365px) {
-  .header__wrapper {
-    height: 96px;
-    padding-top: 15px;
-  }
+@media (max-width: 767px) {
   .header__title {
-    line-height: 45px;
+    font-size: 28px;
+    line-height: 30px;
+    text-transform: capitalize;
   }
-}
-@media (max-width: 1365px) {
-  .header__wrapper {
-    height: auto;
+  .header__text {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 .main {
@@ -265,6 +260,19 @@ canvas {
   max-width: 1170px;
   margin: 0 auto;
   padding: 110px 15px 0;
+}
+@media (max-width: 767px) {
+  .main {
+    height: auto;
+  }
+}
+@media (max-height: 3000px) {
+  .main {
+    height: calc(100vh - 246px);
+  }
+  .main__wrapper {
+    padding-top: 110px;
+  }
 }
 @media (max-height: 999px) {
   .main {
@@ -283,11 +291,6 @@ canvas {
   }
 }
 @media (max-height: 767px) {
-  .main {
-    height: auto;
-  }
-}
-@media (max-width: 1199px) {
   .main {
     height: auto;
   }
@@ -459,7 +462,7 @@ canvas {
   margin: 0;
   font-weight: 300;
 }
-@media (max-height: 899px) {
+@media (max-width: 1199px) {
   .item {
     width: 370px;
   }
@@ -489,7 +492,7 @@ canvas {
     height: 38px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-height: 899px) {
   .item {
     width: 370px;
   }
@@ -528,7 +531,6 @@ canvas {
 }
 .footer__wrapper {
   box-sizing: border-box;
-  height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -573,9 +575,35 @@ canvas {
 .footer__address {
   margin: 0;
 }
-@media (max-width: 1199px) {
+@media (max-width: 565px) {
   .footer__wrapper {
-    height: auto;
+    flex-direction: column;
+  }
+  .footer__content {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .footer__title {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+  .footer__link-list {
+    width: 270px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .footer__link-item {
+    margin-right: 0;
+  }
+  .footer__contacts {
+    text-align: center;
+  }
+  .footer__mail br {
+    display: none;
+  }
+  .footer__address br {
+    display: none;
   }
 }
 .swiper-container {

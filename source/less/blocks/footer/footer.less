@@ -8,7 +8,6 @@
 
 .footer__wrapper {
   box-sizing: border-box;
-  height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,8 +62,41 @@
   margin: 0;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 565px) {
   .footer__wrapper {
-    height: auto;
+    flex-direction: column;
+  }
+
+  .footer__content {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .footer__title {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+
+  .footer__link-list {
+    width: 270px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .footer__link-item {
+    margin-right: 0;
+  }
+
+  .footer__contacts {
+    text-align: center;
+  }
+
+  .footer__mail br {
+    display: none;
+  }
+
+  .footer__address br {
+    display: none;
   }
 }
