@@ -12,8 +12,8 @@
   <link rel="icon" type="image/png" href="https://opnplatform.io/favicon.ico?v=1">
 </head>
 <body>
+<div id="particles-js"></div>
   <div class="page-wrapper">
-    <div id="particles-js"></div>
       <header class="header">
         <div class="header__wrapper">
           <h1 class="header__title">Open Packaging Network</h1>
@@ -146,8 +146,14 @@
         el: '.swiper-pagination',
         clickable: true,
       },
+      breakpoints: {
+        1199: {
+          slidesPerView: '1',
+          centeredSlides: true,
+          speed: 700,
+        }
+      }
     });
-  </script>
   </script>
   <script>
     particlesJS("particles-js", {

@@ -1,4 +1,10 @@
+.header{
+  position: relative;
+}
+
 .header__wrapper {
+  box-sizing: border-box;
+  height: 126px;
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
@@ -17,4 +23,39 @@
 .header__text {
   margin: 0;
   text-align: center;
+}
+
+@media (max-height: 999px) {
+  .header__wrapper {
+    height: 106px;
+    padding-top: 25px;
+  }
+}
+
+@media (max-height: 899px) {
+  .header__wrapper {
+    height: 96px;
+    padding-top: 15px;
+  }
+
+  .header__title {
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 1365px) {
+  .header__wrapper {
+    height: 96px;
+    padding-top: 15px;
+  }
+
+  .header__title {
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 1365px) {
+  .header__wrapper {
+    height: auto;
+  }
 }
