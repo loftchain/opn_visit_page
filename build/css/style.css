@@ -332,13 +332,18 @@ canvas {
   width: 236px;
   margin: 0 auto;
   margin-bottom: 30px;
-  padding: 15px;
+  padding: 12px;
   font-size: 20px;
   line-height: 29px;
   color: #ffffff;
   text-align: center;
-  border-radius: 20px;
-  border: 1px solid #009AFA;
+  border-radius: 10px;
+  border: 1px solid #009afa;
+}
+.item__button:hover {
+  padding: 13px;
+  border: none;
+  background: linear-gradient(270deg, #019BFB 0.18%, #4FFFFA 100%);
 }
 .item__list {
   display: flex;
@@ -455,8 +460,6 @@ canvas {
   .item__button {
     width: 200px;
     margin-bottom: 20px;
-    padding: 10px;
-    line-height: 25px;
   }
   .item__list-link {
     width: 38px;
