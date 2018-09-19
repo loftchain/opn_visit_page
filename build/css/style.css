@@ -337,8 +337,8 @@ canvas {
   line-height: 29px;
   color: #ffffff;
   text-align: center;
-  border: 1px solid #009afa;
   border-radius: 20px;
+  border: 1px solid #009AFA;
 }
 .item__list {
   display: flex;
@@ -520,9 +520,11 @@ canvas {
   color: #ffffff;
   text-decoration: underline;
 }
+.footer__link-item a:hover {
+  text-decoration: none;
+}
 .footer__contacts {
   text-align: right;
-  text-decoration: underline;
 }
 .footer__mail {
   margin: 0;
@@ -547,7 +549,7 @@ canvas {
     margin-bottom: 0;
   }
   .footer__link-list {
-    width: 270px;
+    width: 220px;
     margin: 0 auto;
     justify-content: space-between;
   }
